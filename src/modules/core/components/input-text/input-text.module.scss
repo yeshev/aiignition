@@ -1,4 +1,4 @@
-@use "color.module.scss";
+@use 'color.module.scss';
 
 .label {
   margin-bottom: -3px;
@@ -13,6 +13,10 @@
 
 .invalid {
   color: color.$danger;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: 1;
   &:focus {
     box-shadow: none;
   }
@@ -20,4 +24,5 @@
 
 .formGroup {
   margin-bottom: 32px !important;
+  position: relative;
 }

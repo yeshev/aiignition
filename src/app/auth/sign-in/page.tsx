@@ -2,23 +2,25 @@ import { FC } from 'react';
 import { NextPage } from 'next';
 
 import { AuthWrapper } from '@/modules/auth/components';
-import { SignUpForm } from '@/modules/auth/containers/sign-up-form/sign-up-form';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
-import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
+import { SignInForm } from '@/modules/auth/containers';
 import { redirect } from 'next/navigation';
 
-const SignUp: FC<NextPage> = async () => {
+import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+
+const SignIn: FC<NextPage> = async () => {
   const session = await getServerSession(authOptions);
 
   if (session) {
     redirect(ROUTES_MAP.home.path);
   }
+
   return (
-    <AuthWrapper title='Create an account'>
-      <SignUpForm />
+    <AuthWrapper title='Log in an account'>
+      <SignInForm />
     </AuthWrapper>
   );
 };
 
-export default SignUp;
+export default SignIn;

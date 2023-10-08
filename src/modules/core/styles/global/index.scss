@@ -1,4 +1,6 @@
-@use "color.module.scss";
+@use 'color.module.scss';
+
+@import './button';
 
 html,
 body {
@@ -19,7 +21,8 @@ a {
 }
 
 input {
-  &[type="text"] {
+  &[type='text'],
+  &[type='password'] {
     background-image: none !important;
   }
   &::placeholder {

@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 
-import { ROUTES_MAP } from '@/modules/core/constants/routes';
+import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
 
 const NotFound = () => {
   return (
