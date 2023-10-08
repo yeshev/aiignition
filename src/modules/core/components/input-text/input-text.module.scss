@@ -1,0 +1,23 @@
+@use "color.module.scss";
+
+.label {
+  margin-bottom: -3px;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid color.$borderColor;
+  border-radius: 0;
+  padding: 5px 10px 5px 0;
+}
+
+.invalid {
+  color: color.$danger;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.formGroup {
+  margin-bottom: 32px !important;
+}

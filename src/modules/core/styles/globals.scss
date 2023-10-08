@@ -1,0 +1,32 @@
+@use "color.module.scss";
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: color.$black;
+  background: color.$primaryBackground !important;
+}
+
+a {
+  color: inherit;
+  &:active {
+    color: initial;
+  }
+}
+
+input {
+  &[type="text"] {
+    background-image: none !important;
+  }
+  &::placeholder {
+    color: color.$grey !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+    border-color: color.$inputBorderFocusColor;
+  }
+}

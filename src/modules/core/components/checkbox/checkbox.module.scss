@@ -1,0 +1,14 @@
+@use "color.module.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  margin-top: -1px;
+  margin-right: 9px;
+}

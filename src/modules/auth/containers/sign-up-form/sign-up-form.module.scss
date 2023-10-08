@@ -1,0 +1,13 @@
+@use "color.module.scss";
+
+.divider {
+  margin: 24px 0 39px 0;
+}
+
+.existAccount {
+  color: color.$grey;
+}
+
+.link {
+  color: color.$black;
+}

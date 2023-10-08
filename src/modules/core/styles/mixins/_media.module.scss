@@ -1,0 +1,13 @@
+@use "breakpoints.module.scss";
+
+@mixin media($breakpoint) {
+  @if map-has-key(breakpoints.$breakpointsMap, $breakpoint) {
+    $breakpoint-value: map-get(breakpoints.$breakpointsMap, $breakpoint);
+
+    @media (max-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}

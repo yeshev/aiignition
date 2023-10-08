@@ -1,0 +1,25 @@
+@use "variables.module.scss";
+@use "color.module.scss";
+
+.button {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 12px;
+  border-radius: variables.$baseBorderRadius;
+  border: 1px solid color.$borderColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  color: inherit;
+}
+
+.startIcon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}

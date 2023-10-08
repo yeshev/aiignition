@@ -1,0 +1,17 @@
+@use "color.module.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: color.$grey;
+}
+
+.text {
+  padding: 0 10px;
+  color: color.$grey;
+}
