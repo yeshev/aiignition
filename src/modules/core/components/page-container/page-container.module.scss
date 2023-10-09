@@ -1,0 +1,10 @@
+@use 'mixins/_media.module.scss' as mixins;
+
+.wrapper {
+  // padding: 0 70px;
+  margin: 0 auto;
+  width: 100%;
+  @include mixins.media(md) {
+    padding: 0;
+  }
+}

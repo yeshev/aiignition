@@ -4,7 +4,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { Col, Row } from 'reactstrap';
 
-import { Typography } from '@/modules/core/components';
+import { Typography } from '@/modules/core/components/typography';
 
 import type { AuthWrapperProps } from './auth-wrapper.types';
 

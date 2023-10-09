@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { Input, FormGroup, Label } from 'reactstrap';
-import { Typography } from '..';
+import { Typography } from '../typography';
 
 import type { CheckboxProps } from './checkbox.types';
 

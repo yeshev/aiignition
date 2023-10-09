@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from 'react';
 
-import { Header } from '@/modules/core/components';
+import { Header } from '@/modules/core/components/header';
 
 import styles from './layout.module.scss';
 

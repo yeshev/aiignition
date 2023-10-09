@@ -11,9 +11,11 @@ import { signIn } from 'next-auth/react';
 
 import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
 
-import { Button, InputText, Typography } from '@/modules/core/components';
+import { Button } from '@/modules/core/components/button';
+import { InputText } from '@/modules/core/components/input-text';
+import { Typography } from '@/modules/core/components/typography';
 
-import { AuthDivider } from '@/modules/auth/components';
+import { AuthDivider } from '@/modules/auth/components/auth-divider';
 
 import { signInSchema } from '@/modules/auth/schemas/sign-in.schema';
 

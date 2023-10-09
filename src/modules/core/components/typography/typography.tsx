@@ -15,7 +15,7 @@ export const Typography: FC<TypographyProps> = ({
   const Tag = variant as keyof JSX.IntrinsicElements;
 
   return (
-    <Tag className={classNames(className, styles[fontFamily], styles[size])}>
+    <Tag className={classNames(styles[fontFamily], styles[size], className)}>
       {children}
     </Tag>
   );

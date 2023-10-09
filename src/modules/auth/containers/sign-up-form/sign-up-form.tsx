@@ -11,14 +11,12 @@ import { signIn } from 'next-auth/react';
 
 import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
 
-import {
-  Button,
-  InputText,
-  Typography,
-  Checkbox,
-} from '@/modules/core/components';
+import { Checkbox } from '@/modules/core/components/checkbox';
+import { InputText } from '@/modules/core/components/input-text';
+import { Button } from '@/modules/core/components/button';
+import { Typography } from '@/modules/core/components/typography';
 
-import { AuthDivider } from '@/modules/auth/components';
+import { AuthDivider } from '@/modules/auth/components/auth-divider';
 
 import { INITIAL_SIGN_UP_VALUES } from '@/modules/auth/constants/initial-sign-up-values.constants';
 

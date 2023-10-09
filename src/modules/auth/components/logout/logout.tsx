@@ -1,5 +1,5 @@
 'use client';
-import { Typography } from '@/modules/core/components';
+import { Typography } from '@/modules/core/components/typography';
 import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';
 import { signOut } from 'next-auth/react';
 import { Button } from 'reactstrap';

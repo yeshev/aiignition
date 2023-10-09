@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Typography } from '@/modules/core/components';
+import { Typography } from '@/modules/core/components/typography';
 
 import styles from './auth-divider.module.scss';
 import { ClassName } from '@/modules/core/types/shared.types';

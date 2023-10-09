@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { NextPage } from 'next';
 
-import { AuthWrapper } from '@/modules/auth/components';
-import { SignInForm } from '@/modules/auth/containers';
+import { AuthWrapper } from '@/modules/auth/components/auth-wrapper';
+import { SignInForm } from '@/modules/auth/containers/sign-in-form';
 import { redirect } from 'next/navigation';
 
 import { ROUTES_MAP } from '@/modules/core/constants/routes.constants';

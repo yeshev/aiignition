@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { NextPage } from 'next';
 
-import { AuthWrapper } from '@/modules/auth/components';
+import { AuthWrapper } from '@/modules/auth/components/auth-wrapper';
 import { SignUpForm } from '@/modules/auth/containers/sign-up-form/sign-up-form';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';

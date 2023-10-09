@@ -11,7 +11,7 @@ import {
   FormFeedback,
 } from 'reactstrap';
 
-import { Typography } from '..';
+import { Typography } from '../typography';
 
 import type { InputProps } from './input-text.types';
 

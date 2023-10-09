@@ -1,17 +1,13 @@
 import { FC } from 'react';
-import { Typography } from '..';
+import { Typography } from '@/modules/core/components/typography';
 
 import styles from './header.module.scss';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
-// import { signOut } from 'next-auth/react';
-// import { ROUTES_MAP } from '../../constants/routes.constants';
-import { Logout } from '@/modules/auth/components';
+import { Logout } from '@/modules/auth/components/logout';
 
 export const Header: FC = async () => {
   const session = await getServerSession(authOptions);
-
-  if (!session) return;
 
   return (
     <div className={styles.header}>

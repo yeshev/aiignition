@@ -1,14 +1,16 @@
+import { FC, PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 import { Cabin_Condensed, PT_Serif } from 'next/font/google';
 import { NextAuthProvider } from '@/modules/auth/providers/next-auth.provider';
 
-import { Layout } from '@/modules/core/containers';
+import { Layout } from '@/modules/core/containers/layout';
 
 import classNames from 'classnames';
 
 import 'normalize.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/modules/core/styles/global/index.scss';
+import 'swiper/css';
 
 const cabin = Cabin_Condensed({
   subsets: ['latin'],
@@ -26,11 +28,7 @@ export const metadata: Metadata = {
   title: 'AI Ignition',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang='en'>
       <body className={classNames(pt.variable, cabin.variable)}>
@@ -40,4 +38,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
